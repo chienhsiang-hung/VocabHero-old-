@@ -10,9 +10,8 @@
     <script type="text/jsx">
       const app = document.getElementById('app');
 
-      function Header({title}) {
-        console.log(title);
-        return <h1>{title}</h1>;
+      function Header(props) {
+        return <h1>{`cool ${props.title}`}</h1>;
       }
       function HomePage() {
         return (
