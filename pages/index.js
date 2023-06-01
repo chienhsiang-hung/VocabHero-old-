@@ -1,7 +1,5 @@
 import { useState } from 'react';
 
-const app = document.getElementById('app');
-
 function Header({title}) {
   return <h1>{title ? title:'Defulat Title'}</h1>;
 }
