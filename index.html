@@ -22,12 +22,13 @@
       }
       function HomePage() {
         const names = ['Ada Lovelace', 'Grace Hopper', 'Margaret Hamilton'];
+        const headers = ['React 💙', 'A new title', '']
 
         return (
           <div>
-            <Header title="React 💙"/>
-            <Header title="A new title"/>
-            <Header title=""/>
+            {headers.map((header) => (
+              <Header title={header} />
+            ))}
             <Header />
 
             <ul>
