@@ -10,9 +10,6 @@
     <script type="text/jsx">
       const app = document.getElementById('app');
     
-      function handleClick() {
-        console.log("increment like count");
-      }
       function createTitle(title) {
         if (title) {
           return title;
@@ -27,6 +24,12 @@
         const names = ['Ada Lovelace', 'Grace Hopper', 'Margaret Hamilton'];
         const headers = ['React 💙', 'A new title', '']
 
+        const [likes, setLikes] = React.useState(0);
+        function handleClick() {
+          console.log("increment like count");
+          setLikes(likes + 1);
+        }
+
         return (
           <div>
             {headers.map((header) => (
@@ -40,7 +43,7 @@
               ))}
             </ul>
 
-            <button onClick={handleClick}>Like</button>
+            <button onClick={handleClick}>Like({likes})</button>
           </div>
         );
       }
