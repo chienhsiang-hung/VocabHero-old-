@@ -5,7 +5,7 @@ const app = document.getElementById('app');
 function Header({title}) {
   return <h1>{title ? title:'Defulat Title'}</h1>;
 }
-function HomePage() {
+export default function HomePage() {
   const names = ['Ada Lovelace', 'Grace Hopper', 'Margaret Hamilton'];
   const headers = ['React 💙', 'A new title', '']
 
