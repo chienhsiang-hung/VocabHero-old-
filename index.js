@@ -1,4 +1,4 @@
-imoprt { useState } from 'react';
+import { useState } from 'react';
 
 const app = document.getElementById('app');
 
