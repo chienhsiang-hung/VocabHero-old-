@@ -2,13 +2,6 @@ import { useState } from 'react';
 
 const app = document.getElementById('app');
 
-function createTitle(title) {
-  if (title) {
-    return title;
-  } else {
-    return 'Default title';
-  }
-}
 function Header({title}) {
   return <h1>{title ? title:'Defulat Title'}</h1>;
 }
@@ -39,5 +32,3 @@ function HomePage() {
     </div>
   );
 }
-
-ReactDOM.render(<HomePage />, app);
