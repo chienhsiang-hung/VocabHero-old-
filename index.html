@@ -21,12 +21,20 @@
         return <h1>{title ? title:'Defulat Title'}</h1>;
       }
       function HomePage() {
+        const names = ['Ada Lovelace', 'Grace Hopper', 'Margaret Hamilton'];
+
         return (
           <div>
             <Header title="React 💙"/>
             <Header title="A new title"/>
             <Header title=""/>
             <Header />
+
+            <ul>
+              {names.map((name) => (
+                <li>{name}</li>
+              ))}
+            </ul>
           </div>
         );
       }
